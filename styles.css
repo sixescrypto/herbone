@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', 'Courier New', 'Monaco', 'Menlo', monospace;
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    position: relative;
+}
+
+.buy-herb-btn {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #4CAF50;
+    border: 3px solid #2E7D32;
+    border-radius: 0px;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 
+        inset 2px 2px 0px #66BB6A,
+        inset -2px -2px 0px #2E7D32,
+        4px 4px 0px #1B5E20;
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0px #2E7D32;
+    image-rendering: pixelated;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    z-index: 100;
+}
+
+.buy-herb-btn:hover {
+    background: #66BB6A;
+    border-color: #4CAF50;
+    transform: translate(2px, 2px);
+    box-shadow: 
+        inset 2px 2px 0px #81C784,
+        inset -2px -2px 0px #4CAF50,
+        2px 2px 0px #1B5E20;
+}
+
+.buy-herb-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 
+        inset 2px 2px 0px #4CAF50,
+        inset -2px -2px 0px #2E7D32;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.invite-section {
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        2px 0px 0px #4CAF50,
+        0px 2px 0px #4CAF50,
+        2px 2px 0px #4CAF50,
+        4px 4px 0px #388E3C,
+        6px 6px 0px #2E7D32;
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    line-height: 1.4;
+    image-rendering: pixelated;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+.subtitle {
+    font-size: 0.7rem;
+    color: #a0a0a0;
+    margin-bottom: 3rem;
+    font-weight: normal;
+    font-family: 'Press Start 2P', monospace;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0px #333;
+    line-height: 1.6;
+    image-rendering: pixelated;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+.code-form {
+    margin-bottom: 2rem;
+}
+
+.code-inputs {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.code-input {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid #2d4a2d;
+    background: #1a1a1a;
+    border-radius: 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.1s ease;
+    outline: none;
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: 1px 1px 0px #333;
+    image-rendering: pixelated;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    box-shadow: inset 2px 2px 0px #333, inset -2px -2px 0px #666;
+}
+
+.code-input:focus {
+    border-color: #4CAF50;
+    box-shadow: inset 2px 2px 0px #2E7D32, inset -2px -2px 0px #66BB6A, 0 0 0 3px rgba(76, 175, 80, 0.3);
+    background: #0f2f0f;
+}
+
+.code-input:not(:placeholder-shown) {
+    border-color: #66BB6A;
+    background: #0a2a0a;
+    box-shadow: inset 2px 2px 0px #2E7D32, inset -2px -2px 0px #66BB6A;
+}
+
+.proceed-btn {
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem 2rem;
+    background: #4CAF50;
+    border: 3px solid #2E7D32;
+    border-radius: 0px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    margin-bottom: 1rem;
+    box-shadow: 
+        inset 2px 2px 0px #66BB6A,
+        inset -2px -2px 0px #2E7D32,
+        4px 4px 0px #1B5E20;
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0px #2E7D32;
+    image-rendering: pixelated;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+.proceed-btn:hover {
+    background: #66BB6A;
+    border-color: #4CAF50;
+    transform: translate(2px, 2px);
+    box-shadow: 
+        inset 2px 2px 0px #81C784,
+        inset -2px -2px 0px #4CAF50,
+        2px 2px 0px #1B5E20;
+}
+
+.proceed-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 
+        inset 2px 2px 0px #4CAF50,
+        inset -2px -2px 0px #2E7D32;
+}
+
+.proceed-btn:disabled {
+    background: #2d4a2d;
+    border-color: #1a2e1a;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 
+        inset 2px 2px 0px #3a5a3a,
+        inset -2px -2px 0px #1a2e1a,
+        4px 4px 0px #0f1a0f;
+    color: #666;
+}
+
+.get-code-btn {
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 3px solid #4CAF50;
+    border-radius: 0px;
+    color: #4CAF50;
+    font-size: 0.8rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    margin-bottom: 3rem;
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0px #2E7D32;
+    box-shadow: 
+        inset 2px 2px 0px #66BB6A,
+        inset -2px -2px 0px #2E7D32,
+        4px 4px 0px #1B5E20;
+    image-rendering: pixelated;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+.get-code-btn:hover {
+    background: rgba(76, 175, 80, 0.2);
+    border-color: #66BB6A;
+    color: #66BB6A;
+    transform: translate(2px, 2px);
+    box-shadow: 
+        inset 2px 2px 0px #81C784,
+        inset -2px -2px 0px #4CAF50,
+        2px 2px 0px #1B5E20;
+}
+
+.get-code-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 
+        inset 2px 2px 0px #4CAF50,
+        inset -2px -2px 0px #2E7D32;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .buy-herb-btn {
+        top: 1rem;
+        right: 1rem;
+        padding: 0.6rem 1rem;
+        font-size: 0.6rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .code-inputs {
+        gap: 0.5rem;
+    }
+    
+    .code-input {
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation for code completion */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.code-input.completed {
+    animation: pulse 0.3s ease;
+}
+
+/* Background decoration */
+body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(76, 175, 80, 0.05) 0%, transparent 50%);
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
