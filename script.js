@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     getCodeBtn.addEventListener('click', function() {
         // Redirect to Twitter/X to request an invite code
-        window.open('https://x.com/intent/post?text=I%20want%20to%20farm%20%24HERB%20on%20playherbone.fun%21%20%40PlayHerbOne%20give%20me%20a%20access%20code%21%20%F0%9F%94%91', '_blank');
+        window.open('https://x.com/intent/post?text=I%20want%20to%20farm%20%24HERB%20on%20https%3A//herbone.fun%21%20%40PlayHerbOne%20give%20me%20a%20access%20code%21%20%F0%9F%94%91', '_blank');
     });
 
     buyHerbBtn.addEventListener('click', function() {
